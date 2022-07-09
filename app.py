@@ -5,6 +5,7 @@ import os
 
 from matplotlib import pyplot as plt
 from matplotlib.pyplot import legend
+from nltk.corpus import wordnet
 
 from twitter_sentiment_analysis import consumer_key, consumer_Secret, access_Token, access_Token_Secret, hash_tag, \
     number, sizes, colors, labels
@@ -141,7 +142,7 @@ def do_search():
 
 
                 import nltk
-                nltk.download('vader_lexicon')
+                nltk.download('stopwords')
 
                 sid = SentimentIntensityAnalyzer()
 

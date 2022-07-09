@@ -12,6 +12,7 @@ from nltk.sentiment.vader import SentimentIntensityAnalyzer
 import matplotlib.pyplot as plt
 from collections import Counter
 import nltk
+from nltk.corpus import wordnet
 import secrets
 
 # if sys.version_info[0] < 3:
@@ -104,7 +105,7 @@ print(dataset)
 
 
 #sentiment analysis
-nltk.download('vader_lexicon')
+nltk.download('stopwords')
 sid = SentimentIntensityAnalyzer()
 
 l = []
