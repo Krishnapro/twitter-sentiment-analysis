@@ -171,7 +171,7 @@ def do_search():
     return home()
 
 
-app.secret_key = 'abcdefghijk'
+app.secret_key = 'abcdefghi'
 
 if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0', port=4000)
