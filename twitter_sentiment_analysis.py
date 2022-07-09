@@ -105,7 +105,7 @@ print(dataset)
 
 
 #sentiment analysis
-nltk.download('stopwords')
+nltk.download('vader_lexicon')
 sid = SentimentIntensityAnalyzer()
 
 l = []
