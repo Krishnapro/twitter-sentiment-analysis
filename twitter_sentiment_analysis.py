@@ -18,7 +18,6 @@ import secrets
 # if sys.version_info[0] < 3:
 #     input = raw_input
 
-
 # authenticating with authentication variables
 consumer_key = 'G3vGhOTy8oJ8v0RqpCu7F9CVP'
 consumer_Secret = 'o4LEerI04y5TH6ZzH9FdRoe2mfpFPmKyaZCJZZQTmoOHIQhwCy'
