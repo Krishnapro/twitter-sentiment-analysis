@@ -147,3 +147,4 @@ plt.axis('equal')
 
 plt.title("Sentiment of {} Tweets about {}".format(number, hash_tag))
 plt.show()
+
