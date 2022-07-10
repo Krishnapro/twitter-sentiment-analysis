@@ -1,12 +1,9 @@
 import logging
-
 import tweepy
 import pandas as pd
 import sys
-
 import pickle
 import csv
-
 from nltk.inference.mace import arguments
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 import matplotlib.pyplot as plt
@@ -17,7 +14,6 @@ import secrets
 
 # if sys.version_info[0] < 3:
 #     input = raw_input
-
 # authenticating with authentication variables
 consumer_key = 'G3vGhOTy8oJ8v0RqpCu7F9CVP'
 consumer_Secret = 'o4LEerI04y5TH6ZzH9FdRoe2mfpFPmKyaZCJZZQTmoOHIQhwCy'
@@ -102,7 +98,6 @@ fd = open(inputFile, 'rb')
 dataset = pickle.load(fd)
 print(dataset)
 
-
 #sentiment analysis
 nltk.download('vader_lexicon')
 sid = SentimentIntensityAnalyzer()
@@ -124,8 +119,6 @@ for data in dataset:
 positive = counter['positive']
 negative = counter['negative']
 neutral = counter['neutral']
-
-
 
 labels = ['Positive [' + str(positive) + '%]', 'Negative [' + str(negative) + '%]', 'Neutral [' + str(neutral) + '%]']
 sizes = [positive, negative, neutral]
