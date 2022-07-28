@@ -15,10 +15,10 @@ import secrets
 # if sys.version_info[0] < 3:
 #     input = raw_input
 # authenticating with authentication variables
-consumer_key = 'G3vGhOTy8oJ8v0RqpCu7F9CVP'
-consumer_Secret = 'o4LEerI04y5TH6ZzH9FdRoe2mfpFPmKyaZCJZZQTmoOHIQhwCy'
-access_Token = '911084322274213888-fjcAayIA3nYVD1cEpLkXyZi7wKA7Ak4'
-access_Token_Secret = 'g0Vmw26RLWWOQuxrsyDKbMWLToLvwjqrN1CbFDBPN2J5W'
+consumer_key = 'put here your consumer key'
+consumer_Secret = 'put here your consumer secret key '
+access_Token = 'put here your access Token'
+access_Token_Secret = 'put here your access Token secret'
 
 auth = tweepy.OAuth1UserHandler(consumer_key, consumer_Secret)
 auth.set_access_token(access_Token, access_Token_Secret)

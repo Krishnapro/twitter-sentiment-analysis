@@ -12,7 +12,7 @@ from twitter_sentiment_analysis import consumer_key, consumer_Secret, access_Tok
 
 app = Flask(__name__)
 app.config['SESSION_TYPE'] = 'filesystem'
-app.config['SECRET_KEY'] = 'o4LEerI04y5TH6ZzH9FdRoe2mfpFPmKyaZCJZZQTmoOHIQhwCy'
+app.config['SECRET_KEY'] = 'put here secret key'
 #session.init_app(app)
 
 positive = 0
